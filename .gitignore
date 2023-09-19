@@ -1,4 +1,22 @@
+# Created by https://www.toptal.com/developers/gitignore/api/python,venv,linux
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,venv,linux
 
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -9,16 +27,18 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-myenv
-myenv/
-myenv/bin/
-myenv/include
-myenv/lib/
-myenv/lib64/
-env/
 build/
 develop-eggs/
 dist/
+myenv/
+../myenv/
+lib/python*/site-packages/
+lib64/python*/site-packages/
+myenv/lib
+myenv/lib64
+myenv/bin
+myenv/include
+myenv/*
 downloads/
 eggs/
 .eggs/
@@ -135,7 +155,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-myenv
 
 # Spyder project settings
 .spyderproject
@@ -167,3 +186,27 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+### Python Patch ###
+# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
+
+# ruff
+.ruff_cache/
+
+# LSP config files
+pyrightconfig.json
+
+### venv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+pip-selfcheck.json
+
+# End of https://www.toptal.com/developers/gitignore/api/python,venv,linux
