@@ -9,6 +9,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
+
     - name: Set up Python 3.8
       uses: actions/setup-python@v1
       with:
@@ -17,13 +18,15 @@ jobs:
     - name: Install dependencies
       run: |
         make install
+
     - name: Lint with flake8
       run: |
         make lint
+
     - name: Test with pytest
       run: |
         make test
+
     - name: Format code
       run: |
         make format
-    
