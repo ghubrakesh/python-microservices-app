@@ -19,11 +19,11 @@ jobs:
         make install
     - name: Lint with flake8
       run: |
-        #make lint
+        make lint
     - name: Test with pytest
       run: |
         #make test
     - name: Format code
       run: |
-        #make format
+        make format
     
