@@ -9,6 +9,8 @@ lint:
 
 test:
 	# tests
+build:
+	# build container
 deploy:
 	# deploy
 	
