@@ -45,6 +45,10 @@ GET /search/{query}
 ```sql
 GET /wiki/{name}
 ```
+**Fetch Page Summary**: Get a summary of a Wikipedia page by using NLP library textblob.
+```sql
+GET /phrase/{name}
+```
 ### Usage Examples
 To search for pages related to "_Python_":
 ```
@@ -56,6 +60,10 @@ To fetch a summary of the "Python (programming language)" page:
 GET /wiki/Python
 ```
 
+To get summery using textblob NLP:
+```
+GET /phrase/Python
+```
 ### Dependencies:
 1. **FastAPI**: A modern, fast web framework for building APIs with Python.
 2. **uvicorn**: ASGI server for running FastAPI applications.
