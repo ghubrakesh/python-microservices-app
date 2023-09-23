@@ -4,6 +4,13 @@
 
 This is a Python **microservices** application built with FastAPI that allows you to _search_ for Wikipedia pages and _retrieve_ page summaries. It provides a simple API for interacting with Wikipedia data.
 
+## GitHub Workflows
+1. **Continuous Integration (CI)**: Whenever changes are pushed to the repository, a CI workflow is triggered to automatically build and test the application. This ensures that each microservice functions correctly and maintains code quality.
+2. **Docker Containerization**: Docker containers are used to package each microservice independently. GitHub Workflows automate the building and publishing of Docker images, allowing for easy deployment and scaling of microservices.
+3. **Deployment**: With the help of GitHub Workflows, microservices can be automatically deployed to your chosen hosting environment (e.g., Kubernetes, AWS, or a container orchestration platform).
+4. **Monitoring and Logging**: Each microservice can be configured with its monitoring and logging solutions. GitHub Workflows can be extended to integrate with observability tools for better visibility into the performance of each microservice.
+
+
 ## Getting Started
 
 To run this project locally, follow these steps:
@@ -19,7 +26,7 @@ cd python-microservices-app
 pip install -r requirements.txt
 ```
 
-Start the FastAPI server:
+3. Start the FastAPI server:
 ```bash
 python main.py
 ```
