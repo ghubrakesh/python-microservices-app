@@ -13,8 +13,8 @@ test:
 build:
 	docker build -t wikify .
 run:
-	docker run -p 8000:8000 wikify
+# 	docker run -p 8000:8000 wikify
 deploy:
 	# deploy
 	
-all: install lint test deploy    
+all: install format lint test build run deploy 
