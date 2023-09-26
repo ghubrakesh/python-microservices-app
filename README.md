@@ -60,7 +60,7 @@ To fetch a summary of the "Python (programming language)" page:
 GET /wiki/Python
 ```
 
-To get summery using textblob NLP:
+To get summary using textblob NLP:
 ```
 GET /phrase/Python
 ```
